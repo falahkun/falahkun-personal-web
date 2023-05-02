@@ -1,0 +1,31 @@
+
+{{$len := len .items}}
+<section class="wrapper style1 align-center small">
+    <div class="inner">
+        <!-- {{with .title}}<h2>{{ . }}</h2>{{end}} -->
+        <div class="index align-left">
+            <section id="experiences">
+                <header>
+                    {{with .title}}<h3>{{ . }}</h3>{{end}}
+                </header>
+                <div class="content">
+                    {{ range $index, $item := .items }}
+                    <header>
+                        <b><h4>{{.title}}</h4></b>
+                        <p>{{.company}}</p>
+                        <!-- <h3>Heading with a Subtitle</h3> -->
+                        <!-- <p>{{.join_date}} - {{.leave_date}}</p> -->
+                    </header>
+                    <span class="image fit"><img src="images/banner.jpg" alt="" /></span>
+                    <p>{{.description}}</p>
+                    <a href="#" class="button">View Project</a>
+                    
+                    {{ if not (in (add $index 1) $len) }}
+                    <hr />
+                    {{ end }}
+                    {{end}}
+                </div>
+            </section>
+        </div>
+    </div>
+</section>

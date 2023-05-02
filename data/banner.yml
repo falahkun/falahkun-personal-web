@@ -1,0 +1,12 @@
+####################### Banner #########################
+style: "style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+title : "Hi, I'm Falah"
+subtitle: |
+  I'm Falah Atharid, a Indonesian based Flutter Application Developer with over two years of experience.
+content : |
+  After graduated from vocation high school, I start my career as Flutter Developer with my internship experience at PT Mascitra Teknologi Informasi and PT Gamatechno Indonesia. I'm a Tech Enthusiast, i learn something make me excited.
+button:
+  label : "Get Started"
+  link : "#first"
+image : "images/banner_main.JPG"
+

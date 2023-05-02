@@ -1,0 +1,25 @@
+
+{{$len := len .items}}
+<section class="wrapper style1 align-center small">
+    <div class="inner">
+        <!-- {{with .title}}<h2>{{ . }}</h2>{{end}} -->
+        <div class="index align-left">
+            <section id="educations">
+                <header>
+                    {{with .title}}<h3>{{ . }}</h3>{{end}}
+                </header>
+                <div class="content">
+                    {{ range $index, $item := .items }}
+                    <header>
+                        <b><h4>{{.name}}</h4></b>
+                        <p>{{.major}}</p>
+                    </header>
+                    {{ if not (in (add $index 1) $len) }}
+                    <hr />
+                    {{ end }}
+                    {{end}}
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
