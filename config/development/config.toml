@@ -13,7 +13,7 @@ relativeURLs = "true"
 #canonifyURLs = "true"
 
 # Local
-baseURL = "/"
+baseURL = "https://falahkun.github.io/falahkun-personal-web/"
 publishDir = "public"
 
 # Remote
